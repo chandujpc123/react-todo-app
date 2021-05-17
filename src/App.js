@@ -9,6 +9,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p> Welcome to AWS React Deploy ----> CHANDU J </p>
+        <h2> This is Great!</h2>
         <a
           className="App-link"
           href="https://reactjs.org"
