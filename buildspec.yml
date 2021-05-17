@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo INSTALLING NODE...
+      - curl -fsSL https://rpm.nodesource.com/setup_14.x | bash -
+  pre_build:
+    commands:
+      - echo RUNNING NPM INSTALL
+      - npm install
+  build:
+    commands:
+      - echo RUNNING NPM BUILD
+      - npm build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist  
+  
